@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GNS enterprise- Admin</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">   
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="img/gns.png">
+    
+</head>
+<body onload="admin()">
+
+<div class="line"></div>
+
+    <nav>
+        <div class="left-nav">
+           <img src="img/GNS logo.png" alt="">
+           <h2>Enterprise</h2>
+
+        </div>
+
+        <div class="right-nav">
+
+            <span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+            <span><i class="fa fa-comments-o" aria-hidden="true"></i></span>
+         <span><i class="fa fa-bell-o" aria-hidden="true"></i></span>
+        <span><i class="fa fa-th" aria-hidden="true"></i></span>
+
+        <div class="initials">
+            <h3>CD</h3>
+        </div>
+        
+        <p>Z SITHOLE</P>
+        </div>
+
+    </nav>
+
+    <div class="head">
+    <div class="head-info">
+        
+        <p>Announcement</p>
+        <p>Calender </p>
+        
+    
+                <div class="dropdown">
+                    <button class="dropbtn">Help 
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#">Video Tutorils</a>
+                      <a href="#">Documentation</a>
+                      <a href="#">System Check</a>
+                    </div>
+                  </div> 
+        
+        <!-- <div class="subscription">Subscription alerts</div> -->
+    </div>
+</div>
+
+    <div class="dash-body">
+
+<div class="dash-left">
+    
+<h1>ADMIN PANEL</h1>
+<div class="line2"></div>
+<p class="side-bar-list btn1"><i class="fa fa-th" aria-hidden="true"></i> Dashboard</p>
+<p class="side-bar-list btn2"><i class="fa-solid fa-house"></i> Home Page</p>
+<p class="side-bar-list btn3"><i class="fa-solid fa-list"></i> Registered Users</p>
+<p class="side-bar-list active btn4"><i class="fa-solid fa-book"></i> Add Module</p>
+
+
+</div>
+<div class="right-container">
+  <div class="dash-right">
+     <h3>Dashboard</h3>
+
+     <div class="row">
+      <div class="col-md-4">
+          <h4><img src="img/company.webp" alt="">Total Users</h4>
+          
+      </div>
+      <div class="col-md-4">
+          <h4><img src="img/GNS logo.png" alt="">Application for Online Learning</h4>
+      </div>
+      <div class="col-md-4">
+          <h4><img src="img/services/student-icon.png" alt="">Application for internship</h4>
+      </div>
+  </div>
+  <div  class="admin-right">
+  
+      <table id="customers">
+  
+          <tr>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Phone number</th>
+            <th>Status</th>
+          </tr>
+  
+  <tbody id="adm">
+      
+  </tbody>
+          
+          </table>
+          
+  <!--<p>Name</p>
+  <p>Surname</p>
+  <p>Phone Number</p>
+  <p>Status</p>
+  </div>-->
+          </div>
+  </div>
+  <div class="dash-right">
+    <div class="home">
+      <h3>Home Page</h3>
+      <h3>Update Home</h3>
+      <div class="line"></div>
+  
+      <div class="carousel-info">
+        <div class="left-ci">
+  
+          <h4> <span>Carousel</span> Information</h4>
+  
+        </div>
+  
+        <div class="right-ci">
+      
+          <h5>Select display image</h5>
+          <input type="file">
+          <select name="" id="">
+            <option value="">First Slide</option>
+            <option value="">Second Slide</option>
+            <option value="">Third Slide</option>
+          </select>
+          <h5>Add Label to Slide</h5>
+          <input id="label" type="text" placeholder="Enter Label">
+          <h5>Label Content</h5>
+          <input id="content" type="text" placeholder="Enter Content">
+          <button>Done</button>
+  
+        </div>
+  
+      </div>
+  
+  
+        <div class="second-carousel">
+          
+          <div class="left-c2">
+      
+          <h5>Select Carousel image</h5>
+          <input type="file">
+          <select name="" id="">
+            <option value="">First Slide</option>
+            <option value="">Second Slide</option>
+            <option value="">Third Slide</option>
+            <option value="">Fourth Slide</option>
+            <option value="">Fifth Slide</option>
+            <option value="">Sixth Slide</option>
+          </select>
+          <button>Done</button>
+  
+          </div>
+          <div class="right-c2">
+  
+            <h4><span>Main</span> Carousel</h4>
+    
+            </div>
+  
+        </div>
+  
+        <div class="services">
+          <div class="left-services">
+  
+            <h4> <span>Our</span> Services</h4>
+    
+          </div>
+    
+          <div class="right-services">
+        
+            <h5>Service Icon image</h5>
+            <input type="file">
+            <select name="" id="">
+              <option value="">First Slide</option>
+              <option value="">Second Slide</option>
+              <option value="">Third Slide</option>
+            </select>
+            <h5>Add Service</h5>
+            <input id="label" type="text" placeholder="Enter Label">
+            <h5>Service Description</h5>
+            <input id="content" type="text" placeholder="Enter Content">
+            <button>Done</button>
+    
+          </div>
+        </div>
+  
+        <div class="news">
+  
+          <div class="left-news">
+      
+            <h5>Latest News Image</h5>
+            <input type="file">
+            <select name="" id="">
+              <option value="">First Slide</option>
+              <option value="">Second Slide</option>
+              <option value="">Third Slide</option>
+            </select>
+            <button>Done</button>
+    
+            </div>
+            <div class="right-news">
+    
+              <h4><span>Latest</span> News</h4>
+      
+            </div>
+  
+        </div>
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    </div>
+  </div>
+
+
+<div class="dash-right ">
+  <div class="add-user">
+  <h1>Add User</h1>
+  <input type="text" placeholder="User Name">
+  <input type="text" placeholder="User Surname">
+  <div class="selector">
+    <label for="course">Choose a course:</label>
+    <select name="courses" id="courses">
+      <option value="Default">Default</option>
+      <option value="Internship">Internship</option>
+      <option value="Learnership">Learnership</option>
+    
+    </select>
+
+  </div>
+
+  <button>Add</button>
+  </div>
+<div class="contact-details">
+
+<h1>Registered users</h1>
+<div class="selector2">
+  <label for="course">Choose a table:</label>
+  <select name="courses" id="courses">
+    <option value="Default">Default</option>
+    <option value="Internship">Internship</option>
+    <option value="Learnership">Learnership</option>
+  
+  </select>
+</div>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Surname</th>
+      <th scope="col">Position</th>
+      <th scope="col">Update Info</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Cynthia</td>
+      <td>Dladla</td>
+      <td>Junior Developer</td>
+      <td><button class="button">Update</button> <button  class="button">Delete</button></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Nkosi</td>
+      <td>Internship</td>
+      <td><button  class="button">Update</button> <button  class="button">Delete</button></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Thapelo</td>
+      <td>Mbambo</td>
+      <td>Senior Developer</td>
+      <td><button  class="button">Update</button> <button  class="button">Delete</button></td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+</div>
+
+</div>
+<div class="dash-right active">
+
+  <div class="contact-details">
+  
+  <h1>Send Push Notification</h1>
+  
+  
+<div class="module-info">
+  <div class="module">
+    <h1>Add Module</h1>
+  </div>
+ <h5>Select display image</h5>
+ <input type="file" id="image-file"><br>
+ <progress id="progress-el" max="100" value="0"> 0%</progress><br>
+ <span id="percentage"></span>
+ 
+ <h5>Add Category</h5>
+ <input type="text" id="category" placeholder="Enter category" value="Slwane">
+
+ <h5>Add Tittle</h5>
+ <input type="text" id="tittle" placeholder="Enter tittle">
+<div class="button">
+ <button onclick="addModule()" >Submit</button>
+</div>
+</div>
+</div>
+</div>
+  
+
+
+</div>
+
+</div>
+
+
+
+<!-- <div class="footer">
+
+  <div class="row"> 
+    <div class="col-md-4">
+
+<div class="footer-heading">
+   <h6>GNS Enterprise</h6>
+   <div class="lin"></div>
+  </div>
+
+
+   <p><a href="">About Us</a></p> 
+   <p><a href="">Our Services </a></p>
+   <p><a href="">Privacy Policy</a></p>
+   <p><a href="">Affiliate Program</a></p>
+
+    </div>
+
+    <div class="col-md-3">
+
+      <div class="footer-heading">
+        <h6>Get Help</h6>
+        <div class="line"></div>
+       </div>
+      
+
+       <p><a href="">FAQ</a></p> 
+       <p><a href="">Careers</a></p>
+       <p><a href="">Applications</a></p>
+       <p><a href="">Check Status</a></p>
+        <p><a href="">Fees Bank Details</a></p>
+    </div>
+
+    <div class="col-md-3">
+
+      <div class="footer-heading">
+        <h6>Third Party</h6>
+        <div class="line"></div>
+       </div>
+      
+      <p><a href="">Partners</a></p> 
+     <p><a href="">Sponsors</a></p>
+     <p><a href="">Stakeholders</a></p>
+     <p><a href="">Exterbal Companies</a></p>
+     
+
+    </div>
+    <div class="col-md-3">
+      <div class="footer-heading">
+        <h6>Follow us</h6>
+
+        <div class="line"></div>
+        <div class="links">
+          <span><i class="fa-brands fa-facebook"></i></span>
+          <span><i class="fa-brands fa-instagram"></i></span>
+          <span> <i class="fa-brands fa-twitter"></i></i></span>
+          <span><i class="fa-brands fa-linkedin"></i></i></span>
+         
+          
+        </div>
+       </div>
+      
+    </div>
+  </div>
+
+</div> -->
+ <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-analytics.js"></script>
+ <script>
+
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+apiKey: "AIzaSyAkGsvTHxOp6xndXRAyq8Ykq4o40VbotBY",
+authDomain: "gns-admin-2f230.firebaseapp.com",
+projectId: "gns-admin-2f230",
+storageBucket: "gns-admin-2f230.appspot.com",
+messagingSenderId: "876059007709",
+appId: "1:876059007709:web:c388facf60f099f71ad934",
+measurementId: "G-ZZPS8WSTBV"
+};
+     // Initialize Firebase
+     firebase.initializeApp(firebaseConfig);
+     const auth = firebase.auth();
+     const db = firebase.firestore();
+     db.settings("timestampsInSnapshots:true")
+     firebase.analytics();
+ </script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+     crossorigin="anonymous"></script>
+     
+<script src="https://kit.fontawesome.com/6639192a02.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="javascript/admin.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Process</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/lastPage.css">
+</head>
+<body onload=" displayInfo2(),displayInfo3(),displayInfo4(),displayInfo5(),displayInfo6()">
+
+<div class="bg">
+
+</div>
+
+    
+        <div class="form-container1" id="all">
+           <div class="header1">
+                <h2>Application Process</h2>
+              </div>
+              
+         <div class="section1">
+            <div class="address">
+                <h5>Personal Details</h5>
+            </div>
+            <div class="line" style="width: 30%;">
+
+            </div>
+            <div class="content1">
+                <div class="row1">
+                    <div class="left"> 
+                        <span>South African Citizen?</span>
+                 </div>
+                  
+                 <div class="right" id="right-Side">
+                  <input type="text" id="citizenOpt" disabled="true"  onchange="registered()" >
+                                 <!--<span> <select id="citizenOpt" onchange="registered()" disabled="true" style="background-color: transparent;">
+                                      <option value="">Please Select</option>
+                                      <option value="Yes">Yes</option>
+                                      <option value="No">No</option>
+                                  </select></span>-->
+                 </div>
+                   </div>
+    
+                   <div class="row1 hide1">
+                    <div class="left">
+                        <span>ID No.</span>
+                 </div>
+                  
+                 <div class="right">
+                   <input type="text" placeholder="South African ID No" id="idNo" disabled="true" onchange="dateChange(),DateOfBirth()" disabled="true">
+                 </div>
+                   </div>
+    
+                   <div class="row1 hide2">
+                    <div class="left">
+                        <span>Passport No.</span>
+                 </div>
+                  
+                 <div class="right">
+                   <input type="text" placeholder="Passport No" >
+                 </div>
+                   </div>
+    
+                   <div class="row1">
+                    <div class="left">
+                        <span>Date of Birth</span>
+                 </div>
+                  
+                 <div class="right">
+                   <input type="text" class="shortInput" id="birthDate" disabled="true">
+                 </div>
+                   </div>
+                   <div class="row1">
+                    <div class="left">
+                        <span>Surname</span>
+                 </div>
+                  
+                 <div class="right">
+                   <input type="text" id="surname" disabled="true">
+                 </div>
+                   </div>
+                   
+                   <div class="row1">
+                    <div class="left">
+                        <span>Name(s)</span>
+                 </div>
+                  
+                 <div class="right">
+                   <input type="text"  id="names" onchange="init()" disabled="true">
+                 </div>
+                   </div>
+                  
+                   <div class="row1">
+                    <div class="left">
+                        <span>Initials</span>
+                 </div>
+                  
+                 <div class="right">
+                   <input type="Text" id="initials" class="shortInput"  disabled="true">
+                 </div>
+                   </div>
+                    
+                   <div class="row1">
+                    <div class="left">
+                        <span>Gender</span>
+                 </div>
+                  
+                 <div class="right">
+                  <input type="text" id="genderOpt" disabled="true"   >
+                  
+                    
+                   
+                 </div>
+                   </div>
+    
+                   <div class="row1">
+                    <div class="left">
+                        <span>Title</span>
+                 </div>
+                  
+                 <div class="right">
+                  <input type="text" id="titleOpt" disabled="true"   >
+                    
+                   
+                 </div>
+                 
+                   </div>
+    
+                   <div class="row1">
+                    <div class="left">
+                        <span>Home Language</span>
+                 </div>
+                  
+                 <div class="right">
+                  <input type="text" id="languageOpt" disabled="true"   >
+                    
+                   
+                 </div>
+                 
+                   </div>
+                   <div class="row1">
+                    <div class="left">
+                        <span>Race</span>
+                 </div>
+                  
+                 <div class="right">
+                  <input type="text" id="raceOpt" disabled="true"   >
+                  
+                   
+                 </div>
+                 
+                   </div>
+
+            </div>
+
+           <button class="but1" onclick="But1()">Update</button>
+           <div class="line2"></div>
+<!--Page 3-->
+<div class="address">
+    <h5>Contact Details</h5>
+</div>
+<div class="line" style="width: 30%;">
+
+</div>
+
+<div class="content1">
+  <div class="row1">
+   <div class="left">
+       <span>Email Address</span>
+</div>
+ 
+<div class="right">
+   <input type="email" id="myEmail"  disabled="true">              
+</div>
+  </div>
+
+  <div class="row1">
+   <div class="left">
+       <span>Confirm Email Address</span>
+</div>
+ 
+<div class="right">
+  <input type="email" id="cEmail" disabled="true"onchange="Confirm()">
+</div>
+  </div>
+
+  <div class="row1">
+   <div class="left">
+       <span>Cellphone Number</span>
+</div>
+ 
+<div class="right">
+  <input type="text" id="PhoneN"  disabled="true">
+</div>
+  </div>
+
+  <div class="row1">
+   <div class="left">
+       <span>Confirm Cellphone Number</span>
+</div>
+ 
+<div class="right">
+  <input type="text" id="cPhoneNum"  onchange="ConfirmCell()" disabled="true">
+</div>
+  </div>
+
+
+
+<div class="address">
+<h5>Physical Address</h5>
+</div>
+<div class="line" style="width: 30%;">
+
+</div>
+
+
+
+<div class="row1">
+<div class="left">
+<span>Unit Area</span>
+</div>
+
+<div class="right">
+<input type="text" id="address1"  disabled="true">              
+</div>
+</div>
+
+<div class="row1">
+<div class="left">
+<span>Surburb</span>
+</div>
+
+<div class="right">
+<input type="text" id="address2"  disabled="true">
+</div>
+</div>
+
+<div class="row1">
+<div class="left">
+<span>Town</span>
+</div>
+
+<div class="right">
+<input type="text" id="address3"  disabled="true">
+</div>
+</div>
+
+<div class="row1">
+<div class="left">
+<span>Postal Code</span>
+</div>
+
+<div class="right">
+<input type="text" id="poCode" disabled="true">
+</div>
+</div>
+<div class="row1">
+<div class="left">
+<span>Postal Code with Physical</span>
+</div>
+
+<div class="right">
+  <input type="text" id="pcOpt" disabled="true" onchange="registered()"  >
+
+</div>
+</div>
+
+<div class="address hide1">
+<h5 class="hide1-1">Postal Address</h5>
+</div>
+<div class="line hide2" style="width: 30%;"> 
+
+</div>
+
+<div class="row1 hide3">
+
+<div class="left"> 
+
+<span>Postal Address</span>
+</div>
+
+<div class="right">
+<input type="text" id="pBox" placeholder="PO BOX" disabled="true">
+</div>
+</div> 
+<div class="row1 hide4">
+<div class="left">
+<span>Surburb</span>
+</div>
+
+<div class="right">
+<input type="text" id="sub" placeholder="Address line 2(Surburb)" disabled="true">
+</div>
+</div>
+
+<div class="row1 hide5">
+<div class="left">
+<span>Postal Code</span>
+</div>
+
+<div class="right">
+<input type="text" id="pc2" placeholder="Postal Code">
+</div>
+</div>
+
+</div>
+<button class="but1"  onclick="But2()">Update</button>
+           <div class="line2"></div>
+<!--page4-->
+
+  <p style="font-size: 23px;padding-right: 340px;text-decoration: underline sandybrown;">Next Of Kin Details</p>
+    <div class="address">
+        <h5>Personal Details</h5>
+    </div>
+    <div class="line" style="width: 30%;">
+    
+    </div>
+
+    <div class="content1">
+       <div class="row1">
+        <div class="left">
+            <span>Name & Surname</span>
+     </div>
+      
+     <div class="right">
+        <input type="text" id="nams" disabled="true">              
+     </div>
+       </div>
+
+       <div class="row1">
+        <div class="left">
+            <span>Relationship to you</span>
+     </div>
+      
+     <div class="right">
+        
+          <input type="text" id="relOption" disabled="true">
+            
+     </div>
+       </div>
+
+       
+
+       
+    </div>
+
+
+               <!--   -->
+               <div class="address">
+                <h5>Contact Details</h5>
+            </div>
+            <div class="line" style="width: 30%;">
+            
+            </div>
+
+            <div class="content1">
+              <div class="row1">
+               <div class="left">
+                   <span>Cellphone No</span>
+            </div>
+             
+            <div class="right">
+               <input type="text" id="number" disabled="true">              
+            </div>
+              </div>
+       
+              <div class="row1">
+               <div class="left">
+                   <span>Email</span>
+            </div>
+             
+            <div class="right">
+              <input type="email" id="email" disabled="true">
+            </div>
+           </div>
+       </div>
+
+            <div class="address">
+                <h5>Physical Address</h5>
+            </div>
+            <div class="line" style="width: 30%;"></div>
+            
+          
+       <div class="row1">
+        <div class="left">
+            <span>Unit Area</span>
+     </div>
+      
+     <div class="right">
+        <input type="text"  id="add1" disabled="true">              
+     </div>
+       </div>
+
+       <div class="row1">
+        <div class="left">
+            <span>Surburb</span>
+     </div>
+      
+     <div class="right">
+       <input type="text" id="add2" disabled="true">
+     </div>
+       </div>
+
+       <div class="row1">
+        <div class="left">
+            <span>Town</span>
+     </div>
+      
+     <div class="right">
+       <input type="text" id="add3" disabled="true">
+     </div>
+       </div>
+
+       <div class="row1">
+        <div class="left">
+            <span>Postal Code</span>
+     </div>
+      
+     <div class="right">
+       <input type="text" id="pCode" disabled="true">
+     </div>
+       </div>
+       <div class="row1">
+        <div class="left">
+            <span>Postal Code with Physical</span>
+     </div>
+      
+     <div class="right">
+      <input type="text" id="pcOpt" disabled="true" onchange="registered()">
+        
+     </div>
+       </div>
+       <div class="address hide1">
+        <h5 class="hide1-1">Postal Address</h5>
+    </div>
+    <div class="line hide2" style="width: 30%;"> 
+    
+    </div>
+       
+       <div class="row1 hide3">
+        
+        <div class="left"> 
+          
+            <span>Postal Address</span>
+     </div>
+      
+     <div class="right">
+       <input type="text" id="pBox" placeholder="PO BOX" disabled="true">
+     </div>
+       </div> 
+       <div class="row1 hide4">
+        <div class="left">
+            <span>Surburb</span>
+     </div>
+      
+     <div class="right">
+       <input type="text" id="sub" placeholder="Address line 2(Surburb)" disabled="true">
+     </div>
+       </div>
+
+       <div class="row1 hide5">
+        <div class="left">
+            <span>Postal Code</span>
+     </div>
+      
+     <div class="right">
+       <input type="text" id="pc2" placeholder="Postal Code" disabled="true">
+     </div>
+       </div>
+      
+      <button class="but1"  onclick="But3()">Update</button>
+      <div class="line2"></div>
+           <!--Page 5-->
+          
+            <div class="address">
+                <h5>Last School Attended</h5>
+            </div>
+            <div class="line">
+            
+            </div>
+
+            <div class="content1">
+               <div class="row1">
+                <div class="left">
+                    <span>Have you finished Grade 12?</span>
+             </div>
+              
+             <div class="right">
+              <input type="text" id="matricOpt" onchange="suggest(),registered()" disabled="true">
+                        
+             </div>
+               </div> 
+
+               <div class="row1 hide1">
+                <div class="left">
+                    <span>What is the highest grade passed?</span>
+             </div>
+              
+             <div class="right">
+              <input type="text" id="Goption"  disabled="true">
+              
+             </div>
+               </div>
+
+               <div class="row1">
+                <div class="left">
+                    <span>Name of School attended</span>
+             </div>
+              
+             <div class="right">
+               <input type="text" id="scName"  disabled="true">
+             </div>
+               </div>
+
+               <div class="row1">
+                <div class="left">
+                    <span>School Province</span>
+             </div>
+              
+             <div class="right">
+               <input type="text" id="prov"  disabled="true">
+             </div>
+               </div>
+            </div>
+
+        
+        <div class="content1" id="sec">
+          
+        
+         
+        
+        
+          
+          
+          <p>NB: Maximum of 8 subjects must be entered</p>
+          <table id="subjects">
+         
+           <tr>
+              <th>#</th>
+             <th>Subject Name</th>
+             <th>Grade</th>
+             <th>Level</th>
+             <th>Remove</th>
+           </tr>
+        
+        <tbody id="sub2">
+        
+        </tbody>
+           
+           </table>
+          
+        </div>
+        <button class="but1"  onclick="But4()">Update</button>
+           <div class="line2"></div>
+        <!--PAGE6--> 
+        
+        
+          <div class="address">
+              <h5>Previous Institution attended</h5>
+          </div>
+          <div class="line" style="width: 50%;margin-bottom: 5px;">
+          
+          </div>
+
+          <div class="content1">
+             <div class="row1">
+              <div class="left">
+                  <span>Do you want to include results of your previous institution</span>
+           </div>
+            
+           <div class="right">
+            <input type="text" id="preOption" onchange="registered()"  disabled="true">
+                            
+           </div>
+             </div>
+             <div class="row1">
+              <div class="left">
+                  <span>Current Activity</span>
+           </div>
+             
+           <div class="right">
+            <input type="text" id="activityOption"  disabled="true">
+                
+           </div>
+             </div>
+             <div class="row1">
+              <div class="left">
+                  <span>Name of Institution</span>
+           </div>
+            
+           <div class="right">
+             <input type="text" id="uni" disabled="true">
+           </div>
+             </div> 
+             <div class="row1 hide2">
+             
+             <table id="subjects">
+    
+              <tr>
+                <th>#</th>
+                <th>Document Name</th>
+                <th>Select File</th>  
+                <th>Action</th>
+              </tr>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td >Academic Record</td>
+                  <td><input type="file" id="acam"><br> 
+                      <progress id="bar" max="100" value="0">
+                      0%
+                     </progress><br>
+                     <span id="percentage"></span></td>
+                  <td><button onclick=" academicRecord() ">Upload</button></td>  
+                </tr> 
+              </tbody>
+              </table>
+            </div>
+
+             
+
+             
+          </div>
+
+     
+      <button class="but1"  onclick="But5()">Update</button>
+           <div class="line2"></div>
+      <!--pAGE 7-->
+      <!--<div class="section1" id="sec">-->
+        <div class="address">
+            <h5>Select Course you want to apply for</h5>
+        </div>
+        <div class="line" style="width: 65%;bottom:5px;">
+        </div>
+        
+        <table id="subjects">
+        
+        <tr>
+       
+        <th>Course Name</th>
+        <th>Course Code</th>
+        <th>Remove</th>
+        </tr>
+        
+        <tbody id="cou">
+        
+        </tbody>
+        
+        </table>
+       
+        <button class="but1" id="b1" >Update</button>
+           <div class="line2"></div>
+         
+        <!--PAGE8-->
+        
+          
+ 
+         
+ 
+                 <div class="address" style="margin-top: 20px;">
+                  <h5>Create your login pin</h5>
+              </div>
+              <div class="line" style="width: 40%;bottom:5px;">
+              </div>
+              <div class="row1">
+                <div class="left">
+                    <span>Create Password</span>
+             </div>
+               
+             <div class="right">
+              <input type="password" id="password-field" class="inp" placeholder="More than or equal to 8 char" style="background-color:white;color: black; " >
+              <i class="fa-solid fa-eye" id="passStatus" aria-hidden="true" onClick="viewPassword()"></i>    
+               </div>
+              </div>
+               <div class="row1">
+                <div class="left">
+                    <span>Confirm Pasword</span>
+             </div>
+               
+             <div class="right">
+              <input type="password" id="bttn2"class="inp" placeholder="Confirm your password" style="background-color:white;color: black;" onchange="Passwords()">
+                  
+             </div>
+               </div>
+               <button class="finalButton" style="background-color: transparent;padding:10px;border-radius:30px;color:white;border:2px solid sandybrown; transition: 1s;" id="finSub" onclick="finalSubmission()">Submit Application</button>
+
+<!--Contains the buttons-->
+
+       <div class="footer">
+        
+      </div>
+      
+
+        </div>
+      </div>
+      <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-analytics.js"></script>
+      <script>
+      //Connects to database,Changes everytime
+      const firebaseConfig = {
+      apiKey: "AIzaSyB0tDAbZkpLU87qZIQyLH8Bun_upJgzdac",
+      authDomain: "gns-enterprise-1364c.firebaseapp.com",
+      projectId: "gns-enterprise-1364c",
+      storageBucket: "gns-enterprise-1364c.appspot.com",
+      messagingSenderId: "651977652775",
+      appId: "1:651977652775:web:2ed271b4a534c92b0aac02",
+      measurementId: "G-V6F7KN3RKL"
+      };
+      
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+          const auth = firebase.auth();
+          const db = firebase.firestore();
+          db.settings("timestampsInSnapshots:true")
+          firebase.analytics();
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+<script src="javascript/app-nine-Page.js"></script>
+</body>
+</html>

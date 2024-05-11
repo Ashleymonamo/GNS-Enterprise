@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Process</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/appPage.css">
+</head>
+<body onload="displayPersonal()">
+
+<div class="bg">
+
+</div>
+
+    
+        <div class="form-container1">
+           <div class="header1">
+                <h2>Application Process</h2>
+              </div>
+              
+         <div class="section1">
+            <div class="address">
+                <h5>Personal Details</h5>
+            </div>
+            <div class="line" style="width: 30%;">
+
+            </div>
+            <div class="content1">
+               <div class="row1">
+                <div class="left">
+                    <span>South African Citizen?</span>
+             </div>
+              
+             <div class="right" id="right-Side">
+                              <select id="citizenOpt" onchange="registered()">
+                                  <option value="">Please Select</option>
+                                  <option value="Yes">Yes</option>
+                                  <option value="No">No</option>
+                              </select>
+             </div>
+               </div>
+
+               <div class="row1 hide1">
+                <div class="left">
+                    <span>ID No.</span>
+             </div>
+              
+             <div class="right">
+               <input type="text" placeholder="South African ID No" id="idNo" onchange="dateChange()">
+             </div>
+               </div>
+
+               <div class="row1 hide2">
+                <div class="left">
+                    <span>Passport No.</span>
+             </div>
+              
+             <div class="right">
+               <input type="text" id="passP"placeholder="Passport No">
+             </div>
+               </div>
+
+               <div class="row1">
+                <div class="left">
+                    <span>Date of Birth</span>
+             </div>
+              
+             <div class="right">
+               <input type="date" class="shortInput" id="birthDate">
+             </div>
+               </div>
+               
+               <div class="row1">
+                <div class="left">
+                    <span>Name(s)</span>
+             </div>
+              
+             <div class="right">
+               <input type="text" placeholder="Enter Names" id="names" onchange="init()">
+             </div>
+               </div>
+               <div class="row1">
+                <div class="left">
+                    <span>Surname</span>
+             </div>
+              
+             <div class="right">
+               <input type="text" placeholder="Enter Surname" id="surname">
+             </div>
+               </div>
+               <div class="row1">
+                <div class="left">
+                    <span>Initials</span>
+             </div>
+              
+             <div class="right">
+               <input type="Text" id="initials" class="shortInput" placeholder="Initials">
+             </div>
+               </div>
+                
+               <div class="row1">
+                <div class="left">
+                    <span>Gender</span>
+             </div>
+              
+             <div class="right">
+                <select id="genderOpt">
+                    <option value="">Please Select</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    
+                    
+                </select> 
+               
+             </div>
+               </div>
+
+               <div class="row1">
+                <div class="left">
+                    <span>Title</span>
+             </div>
+              
+             <div class="right">
+                <select id="titleOpt">
+                    <option value="">Please Select</option>
+                    <option value="Mr">Mr</option>
+                    <option value="Mrs">Mrs</option>
+                    <option value="Ms">Ms</option>
+                </select> 
+               
+             </div>
+             
+               </div>
+
+               <div class="row1">
+                <div class="left">
+                    <span>Home Language</span>
+             </div>
+              
+             <div class="right">
+                <select id="languageOpt">
+                    <option value="">Please Select</option>
+                    <option value="Afrikaans">Afrikaans</option>
+                    <option value="English">English</option>
+                    <option value="Sepedi">Sepedi</option>
+                    <option value="Setswana">Setswana</option>
+                    <option value="IsiZulu">IsiZulu</option>
+                    <option value="Tshivenda">Tshivenda</option>
+                    <option value="IsiXhosa">IsiXhosa</option>
+                    <option value="IsiNdebele">IsiNdebele</option>
+                    <option value="XiTsonga">XiTsonga</option>
+                    <option value="Sesotho">Sesotho</option>
+                    
+                </select> 
+               
+             </div>
+             
+               </div>
+               <div class="row1">
+                <div class="left">
+                    <span>Race</span>
+             </div>
+              
+             <div class="right">
+                <select id="raceOpt">
+                    <option value="">Please Select</option>
+                    <option value="African">African</option>
+                    <option value="Coloured">Coloured</option>
+                    <option value="White">White</option>
+                </select> 
+               
+             </div>
+             
+               </div>
+
+            </div>
+
+           
+
+           
+         
+        </div>
+
+
+<!--Contains the buttons-->
+
+       <div class="footer">
+        <button class="backBtn" onclick="Back()">Back</button>
+        <button class="nxtBtn" onclick="Next()">Next</button>
+      </div>
+      
+
+        </div>
+       
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+<script src="javascript/app-sec-Page.js"></script>
+</body>
+</html>

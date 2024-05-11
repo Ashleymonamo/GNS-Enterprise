@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Process</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/appPage.css">
+</head>
+<body onload="storage(),displayCourses()">
+
+<div class="bg"> 
+
+</div>
+
+    
+        <div class="form-container1">
+
+           <div class="header1">
+                <h2>Application Process</h2>
+              </div>
+
+               
+         <div class="section1" id="sec">
+            <div class="address">
+                <h5>Select Course you want to apply for</h5>
+            </div>
+            <div class="line" style="width: 65%;bottom:5px;">
+            
+            </div>
+
+            <div class="content1">
+              <div class="row1">
+                <div class="left">
+                    <span>Select Faculty</span>
+             </div> 
+              
+             <div class="right">
+              <select id="facultyOpt" onchange="registered()">
+                <option value="">Please Select</option>
+                <option value="ICT">ICT</option>
+               <!-- <option value="Engineering">Engineering</option>-->
+            </select>            
+             </div>
+               </div>
+           
+               <div class="row1" >
+                <div class="left">
+                    <span class="hide1" style="display: flex;">Select Course</span>
+             </div>
+              
+             <div class="right">
+              <select id="cName"  class="hide2" style="display: flex" onchange="courseCodes() ">
+                <!--ICT COURSES-->
+                <option value="">Please Select</option>
+                <option value="End User Computing">IT: End User Computing</option>
+                <option value="Technical Support">IT: Technical Support</option>
+                <option value="System Dev Level 4">IT: System Dev Level 4</option>
+                <option value="System Dev Level 5">IT: System Dev Level 5</option>
+                <option value="System Support">System Support</option>
+                <option value="Advertising">Advertising</option>
+                <option value="ICT: Software Testing">ICT:Software Testing</option>
+                <option value="System Analysis Support Practice">Business Analysis Support Practice</option>
+                
+            </select> 
+            <!--Engineering courses-->
+            <!--<select id="cName"  class="hide3" onchange="courseCodes()">
+              
+              <option value="">Please Select</option>
+              <option value="Electrical Engineering">Electrical Engineering</option>
+              <option value="Mechanical Engineering">Mechanical Engineering</option>
+              <option value="Chemical Engineering">Chemical Engineering</option>
+              </select>-->
+             </div>
+               </div>
+           
+               <div class="row1">
+                <div class="left">
+                    <span>NQF Level</span>
+             </div>
+              
+             <div class="right">
+              <select id="cCode"  class="hide4" style="display: flex;" onchange="courseCodes()" >
+              
+                <option value="" >Please Select</option>
+                <option value="NQF Level 3" class="hide4-1" >NQF Level 3</option>
+                <option value="NQF Level 4" class="hide4-2" >NQF Level 4</option>
+                <option value="NQF Level 4" class="hide4-3" >NQF Level 4</option>
+
+                <option value="NQF Level 5" class="hide4-4" >NQF Level 5</option> 
+                <option value="NQF Level 5" class="hide4-5" >NQF Level 5</option>
+                <option value="NQF Level 4" class="hide4-6" >NQF Level 4</option>
+                <option value="NQF Level 5" class="hide4-7" >NQF Level 5</option>
+                <option value="NQF Level 5" class="hide4-8" >NQF Level 5</option>
+                
+                </select> 
+                <!--<select id="cCode"  class="hide5" >
+              
+                  <option value="">Please Select</option>
+                  <option value="ELC1" class="hide5-1">ELC1</option>
+                  <option value="MECH1" class="hide5-2">MECH1</option>
+                  <option value="CHE1" class="hide5-3">CHE1</option>
+                   
+                  </select> -->
+              <!-- <input type="text" placeholder="Course Code" id="cd" onload="courseCode()">-->
+             </div>
+               </div>
+        </div>
+
+        <button class="addSub" onclick="addCourses()">Add Course</button>
+        <p>Please enter all the courses you wish to pursue</p>
+        <table id="subjects">
+        
+        <tr>
+        <th>#</th>
+        <th>Course Name</th>
+        <th>Course Code</th>
+        <th>Edit</th>
+        </tr>
+        
+        <tbody id="cou">
+        
+        </tbody>
+        
+        </table>
+       
+    </div>
+
+
+<!--Contains the buttons-->
+
+       <div class="footer">
+        <button class="backBtn" onclick="Back()">Back</button>
+        <button class="nxtBtn" onclick="Next()">Next</button>
+      </div>
+      
+
+        </div>
+       
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+<script src="javascript/app-seven-Page.js"></script>
+</body>
+</html>
