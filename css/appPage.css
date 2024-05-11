@@ -1,0 +1,426 @@
+body{
+    
+    position: relative;   
+   display: flex;
+   margin: 0;
+   padding: 0;
+   justify-content: center;
+   align-items: center;
+   background-image: url(../img/courses/7a075ae77e31249f5585f38cbeb77dd0.jpg);
+   background-size: cover;
+   background-position: center center;
+   transform: translateZ(0);
+   will-change: transform;
+   height: 100vh;
+   overflow-x: hidden;
+}
+
+.bg 
+{
+    position: absolute;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    z-index: -5;/*Allows you to put the content on top of the form*/
+     opacity: 0.4;  
+}
+.form-container1
+{
+position: relative;
+background-color: rgba(0, 0, 0, 0.7);
+padding: 30px;
+padding-top: 0;
+width: 50%;
+border-radius: 15px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+   align-items: center;
+   color: white;
+  overflow: hidden; 
+  height: auto;
+
+}
+.header1
+{
+position: absolute;
+width: 100%;
+padding: 10px;
+display: flex;
+justify-content: center;
+   align-items: center;
+   background-color: rgba(0, 0, 0, 0.945);
+   top:0;  
+}
+.header2
+{
+    position: absolute;
+    display: flex;
+padding: 20px;
+    top:60px;
+    left: 30px;
+
+    
+}
+.section1
+{
+    position: relative;
+    margin-top: 76px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: center; 
+}
+.content1
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: center;
+   
+   width: 100%;
+}
+.row1
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 15px;
+  
+    width: 100%;
+}
+.row1 .left
+{
+position: relative;
+display: flex;
+width: 45%;
+
+align-items: center;
+
+}
+.row1 .left span
+{
+position: absolute;
+right: 0;
+}
+.row1 .right
+{
+width: 45%;
+
+align-items: center;
+
+}
+
+.row1 select
+{
+padding: 4px;
+border-radius: 20px;
+outline: 0;
+border: 0;
+padding-left: 15px;
+padding-right: 15px;
+
+}
+.row1 select:focus
+{
+    outline:2px solid sandybrown ;
+}
+.row1 input
+{
+width:75%;
+padding: 4px;
+border-radius: 20px;
+outline: 0;
+border: 0;
+padding-left: 15px;
+padding-right: 15px;
+}
+.row1 input:focus
+{
+    outline:2px solid sandybrown ;
+}
+.row1 .right .shortInput
+{
+    width: 50%;
+}
+.row1 .one span::after
+{
+    content:"*";
+    top: 0;
+    left: 0;
+    color: red;
+}
+.row1 .left span::after
+{
+    content:"*";
+    top: 0;
+    left: 0;
+    color: red;
+}
+
+.hide1
+{
+    display: none;
+}
+.hide1-1
+{
+    display: none;
+}
+.hide2
+{
+    display: none;
+}
+.hide3
+{
+    display: none;
+}
+.hide4
+{
+    display: none;
+}
+.hide5
+{
+    display: none;
+}
+.hide4-1
+{
+    display: none;
+}
+.hide4-2
+{
+    display: none;
+}
+.hide4-3
+{
+    display: none;
+}
+.hide5-1
+{
+    display: none;
+}
+.hide5-2
+{
+    display: none;
+}
+.hide5-3
+{
+    display: none;
+}
+
+.pdf 
+{
+position: relative;
+width: 100%;
+height: 300px;
+margin-top: 20px;
+margin-bottom: 15px;
+}
+.terms
+{
+   margin: 10px;
+}
+.btn1 button
+{
+ padding: 6px;
+ border: 2px solid sandybrown;
+ outline: 0;
+ background: transparent;
+ color: white;
+ border-radius: 20px;
+ padding-left: 10px;
+ padding-right: 10px;
+ transition: 1s;
+}
+.btn1 button:hover
+{
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+.footer
+{
+padding: 10px;
+display: flex;
+gap: 400px;
+margin-top: 10px;
+
+}
+.footer .backBtn
+{
+    padding: 6px;
+    border: 2px solid sandybrown;
+    outline: 0;
+    background: transparent;
+    color: white;
+    border-radius: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    transition: 1s;
+    
+    
+}
+#fee
+{
+    padding: 6px;
+    border: 2px solid sandybrown;
+    outline: 0;
+    background: transparent;
+    color: white;
+    border-radius: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    transition: 1s;    
+    background-color: saddlebrown;
+}
+#fee:hover
+{
+    transition: 1s;
+       background-color: rgb(143, 105, 78);
+    color: black;
+
+}
+.footer .backBtn:hover
+{
+    background-color: white;
+    color: black;
+    transition: 1s;
+} 
+.footer .nxtBtn
+{
+    padding: 6px;
+    border: 2px solid sandybrown;
+    outline: 0;
+    background: transparent;
+    color: white;
+    border-radius: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    transition: 1s;
+}
+
+.footer .nxtBtn:hover
+{
+    background-color: white;
+    color: black;
+    transition: 1s;
+} 
+.address
+{position: relative;
+    display: flex;
+   
+}
+.line
+{
+    position: relative;
+    background-color: sandybrown;
+    width: 40%;
+    height: 2px;
+    margin-bottom: 5px;
+    bottom:5px;
+    
+}
+.addSub
+{
+    outline: 0;
+    border: 2px solid sandybrown;
+    margin-bottom: 10px;
+}
+.content1 p{
+    padding: 10px;
+}
+
+#subjects{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 500px;
+    padding-bottom: 5px;
+  }
+  
+  #subjects td, #subjects th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  /*#subjects tr:nth-child(even){background-color: #d4d4d4;}
+  
+  #subjects tr:hover {background-color: #ddd;}*/
+  
+  #subjects th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: grey;
+    color: white;
+  }
+  #subjects button{
+    border:1px solid sandybrown;
+    padding: 5px;
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: none;
+    color:white;
+  }
+  #bar
+  {
+    display: none; 
+  }
+  #bar2
+  {
+    display: none;
+  }
+/*.backgroundcover
+{
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+.backgroundcover img
+{
+    height: 100%;
+    width: 100%; 
+
+
+}
+.application-container
+{
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+   border-radius: 10px; 
+   color: white;
+   width: 40%;
+    text-align: center;
+   
+   
+} 
+.application-container label
+{
+    
+    margin-right: 280px;
+    
+
+} 
+.application-container select
+{position: relative;
+    margin-left: 240px;
+    border-radius: 10px;
+     bottom:20px;
+     
+}
+.application-container  select:focus
+{
+    outline: 1px solid rgb(243, 150, 69);
+}
+
+span{
+    color: pink;
+}*/

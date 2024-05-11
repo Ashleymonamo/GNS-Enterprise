@@ -1,0 +1,109 @@
+body{ 
+
+ position: relative;
+ display: flex;
+ margin: 0%;
+ padding: 0%;
+ justify-content:center;
+ align-items: center;
+ flex-direction: column;
+}
+
+.backgroundcover{
+
+    height: 100vh;
+    width: 100vw;
+}
+
+.backgroundcover img{
+
+    height: 100%;
+    width: 100%;
+
+}
+
+.registration-container{
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.596);
+    padding: 30px ;
+    border-radius: 35px;
+    width: 30%;
+    text-align: center;
+    
+    
+}
+
+.registration-container input{
+    margin-bottom: 12px;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 25px;
+    border: 0;
+    outline: 0;
+
+}
+.registration-container input:focus{
+    outline: 3px solid rgb(209, 16, 16);
+}
+
+.registration-container button{
+
+    margin-top: 25px;
+    padding: 8px;
+    border-radius: 25px;
+    border: 0;
+    outline: 0;
+    background-color: aqua;
+}
+.registration-container button:hover{
+
+    background-color: rgb(85, 158, 255);
+    color: white;
+}
+.registration-container a{
+
+    color: red;
+    margin-top: 10px;
+}
+
+.h1{
+
+    color: aqua;
+    justify-content: center;
+    text-align: center;
+
+}
+.btns{
+    position: relative;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+ 
+    align-items: center;
+}
+.btns .left{
+    width: 35%;
+}
+.left .more{
+
+    border: 2px solid #ff5724;
+    background-color: transparent;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+}
+.left .more:hover{
+    background-color: sandybrown;
+    border: 2px solid black;
+}
+.btns .right{
+    width: 65%;
+}
+.btns .right button{
+
+    width: 80%;
+}

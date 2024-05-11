@@ -1,0 +1,317 @@
+
+body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+    }
+    
+nav{
+
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    
+    align-items: center;
+    background-color: sandybrown;
+    box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.52);
+    -webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.52);
+    -moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.52);
+    z-index: 1000000;
+    width: 100%;
+    height: 100px;
+
+}
+
+.coverpic{
+
+    height: 100vh;
+    width: 100vw;
+}
+.coverpic img{
+
+    height: 100%;
+    width: 100%;
+}
+
+.left-nav
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.left-nav img{
+
+    height: 75px;
+    width: auto;
+}
+
+.right-nav {
+
+    position: relative;
+
+}
+.right-nav a{
+
+    margin-left: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    
+}
+
+.right-nav a.active{
+
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+     .footer{
+       width: 100%;
+       background-color: rgb(19, 61, 85);
+       color: white;
+       text-align: center;
+       padding: 60px;
+       padding-left: 100px;
+       padding-right: 100px;
+       justify-content: center;
+       align-items: center;
+    
+    }
+    .footer .row{
+       position: relative;
+       display: flex;
+      
+    
+    
+    }
+    .footer .row h6{
+       font-size: 20px;
+       width: fit-content;
+    
+    
+    
+    }
+    
+    .footer .row .footer-heading {
+       position: relative;
+       width: fit-content;
+       overflow: hidden;
+       text-align: left;
+       margin-bottom: 40px;
+    
+    }
+    .footer .row .footer-heading .line{
+       border-bottom: 3px solid sandybrown;
+       width: 65%;
+    
+    
+    }
+    .footer .row p{
+       text-align: left;
+    }
+    .footer .row p a{
+       text-decoration: none;
+       color: rgb(211, 211, 211);
+    }
+    
+    .footer-heading .links{
+       margin-top: 40px;
+    
+    
+    
+    }
+    
+    .footer-heading .links span {
+       font-size: 30px;
+       margin-right: 20px;
+    
+    }
+    
+    .footer-heading .links span .fa-facebook:hover {
+       color: rgb(59, 89, 152);
+       cursor: pointer;
+    }
+    .footer-heading .links span .fa-instagram:hover {
+       color: rgb(138, 58, 185);
+       cursor: pointer;
+    }
+    .footer-heading .links span .fa-twitter:hover {
+       color: rgb(0, 172, 238);
+       cursor: pointer;
+    }
+    .footer-heading .links span .fa-linkedin:hover {
+       color: rgb(0, 119, 181);
+       cursor: pointer;
+    }
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../img/pexels-karolina-grabowska-5239913.jpg);
+    background-size: cover;
+
+}
+
+.contact .content{
+
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2{
+
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(40, 40, 40);
+    /* color: rgb(244, 236, 236); */
+}
+
+.contact .content p{
+
+   
+    font-weight: 350;
+    font-size:25px;
+    color: black;
+}
+.container{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+
+}
+
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contactInfo .box .text{ 
+    /* to check */
+    display: flex;
+    margin-left: 20px;
+    font-size: 15px;
+    color:black;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 15px;
+
+}
+.contactInfo .box .text p a{
+
+    text-decoration: none;
+    color: black;
+}
+
+
+.container .contactInfo .box .text h3{
+ font-weight: 600;
+ color:sandybrown;
+    
+}
+
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    margin-left: -250px;
+    background-color: rgba(255, 255, 255, 0.935);
+}
+.contactForm h2{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+
+}
+
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.749);
+}
+
+.contactForm .inputBox input,textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid sandybrown;
+    outline: none;
+    resize: none;
+
+}
+
+.contactForm .inputBox  span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #649;
+
+
+}
+.contactForm .inputBox input :focus ~ span,
+.contactForm .inputBox input :valid ~ span,
+.contactForm .inputBox textarea :focus ~ span,
+.contactForm .inputBox textarea :valid ~ span{
+   
+    font-size: 12px;
+    transform: translateY(-20px);
+
+
+}
+
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: sandybrown;
+    color: rgb(66, 66, 66);
+    /* border: 1px solid black; */
+    border-radius: 50px;
+
+}
+.contactForm .inputBox input[type="submit"]:hover{
+    background: rgb(228, 222, 226);
+    color: rgb(8, 8, 8);
+
+}
+
+
+

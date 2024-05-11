@@ -1,0 +1,241 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/slide/Newsroom-Hero-Desktop-min-Card@2x.jpg); /*to inser a*/ 
+    background-size: cover;
+    background-position: center center;
+    transform: translateZ(0);
+    will-change: transform;
+    height: 100vh;
+}
+
+.bg{
+    position: absolute;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    z-index: -5;
+    opacity: 0.5;
+}
+
+.form-container-one{
+    position: relative;
+    background-color: rgba(0,0,0,0.7);
+    padding: 30px;
+    padding-top: 0;
+    width: 50%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    overflow: hidden;
+    height: auto;
+}
+
+.header-one{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.945);
+}
+
+.section-one{
+    position: relative;
+    margin-top: 76px;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.content-one{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.row-one{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.row-one .left{
+    position: relative;
+    display: flex;
+    width: 45%;
+    align-items: center;
+}
+
+.row-one .right{
+    width: 45%;
+    align-items: center;
+}
+.row-one .left span{
+    position: absolute;
+    right: 0;
+}
+
+.row-one select{
+    padding: 3px;
+    border-radius: 20px;
+    border-inline: 0;
+}
+.row-one input{
+    padding: 4px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    width: 75%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.row-one select:focus{
+    outline: 2px solid sandybrown;
+}
+.row-one input:focus{
+    outline: 2px solid sandybrown;
+}
+.row-one .short-input{
+    width: 50%;
+}
+
+.row-one .one span::after{/*inserting a red star*/
+    content: "*";
+    top: 0;
+    left: 0;
+    color: red;
+}
+.row-one .left span::after{/*inserting a red star*/
+    content: "*";
+    top: 0;
+    left: 0;
+    color: red;
+}
+
+.hide-one{
+    display: none;
+
+}
+.hide-two{
+    display: none;
+
+}
+.hide-three{
+    display: none;
+
+}
+.hide-four{
+    display: none;
+
+}
+.pdf{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.terms{
+    margin: 15px;
+}
+
+.btn-one{
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid sandybrown;
+    outline: 0;
+    background: transparent;
+    color: white;
+    border-radius: 20px;
+    transition: 1.8s;
+}
+.btn-one:hover{
+    background-color: white;
+    color: black;
+    transition: 1.8s;
+}
+
+/*--------Heding-----------*/
+.content-one .inh{
+    margin-top: 10px;
+    text-decoration: underline sandybrown;
+    padding-bottom: 15px;
+    padding-right: 500px;
+}
+/*New button application-two*/
+
+.footer{
+
+    position: relative;
+  
+}
+.footer .btns{
+    
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center ;
+    gap: 45pc;
+}
+.footer .next{
+    border: 2px solid sandybrown;
+    outline: 0;
+    background: transparent;
+    color: white;
+    border-radius: 20px;
+    transition: 1.5s;
+}
+.footer .next:hover{
+    background-color: white;
+    color: black;
+    transition: 1.5s;
+}
+.footer .back{
+
+    border: 2px solid sandybrown;
+    outline: 0;
+    background: transparent;
+    color: white;
+    border-radius: 20px;
+    transition: 1.5s;
+}
+.footer .back:hover{
+    background-color: white;
+    color: black;
+    transition: 1.5s;
+}
+/*-------------------------------------*/
+
+.pteg{
+    padding-top: 15px;
+    padding-right: 300px;
+    color: rgb(138, 133, 133);
+}
+/*-----------------------------------------------------------------------------------------------------*/
+table{
+    width: 100%;
+}
+table thead{
+    background-color: gainsboro;
+    color: black;
+}

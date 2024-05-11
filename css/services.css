@@ -1,0 +1,322 @@
+body{
+    position: relative;
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+   
+}
+nav{
+
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    align-items: center;
+    background-color: sandybrown;
+    box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.52);
+    -webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.52);
+    -moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.52);
+    z-index: 1000000;
+    width: 100%;
+    height: 100px;
+
+}
+
+.coverpic{
+
+    height: 100vh;
+    width: 100vw;
+}
+.coverpic img{
+
+    height: 100%;
+    width: 100%;
+}
+
+.left-nav
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.left-nav img{
+
+    height: 75px;
+    width: auto;
+}
+
+.right-nav {
+
+    position: relative;
+
+}
+.right-nav a{
+
+    margin-left: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    
+}
+
+.right-nav a.active{
+
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+    /* --------------------------------------------------------------------------------------------------------------------------------- */
+
+
+.wrapper{
+ 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fafafa;
+ 
+   
+}
+.wrapper .line-top{
+    border-bottom: 3px solid sandybrown;
+    width: 95%;
+    margin-bottom: 20px;
+  }
+.wrapper .head{
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height:250px;
+
+}
+.head .left{
+    width: 20%;
+    margin-left: 40px;
+    margin-bottom: -50px;
+}
+.head .right{
+    width: 60%;
+    margin-bottom: -70px;
+}
+.left .more{
+
+    border-radius: 20px;
+    border: 2px solid #ff5724;
+    background-color: transparent;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.left .more:hover{
+    background-color: sandybrown;
+    border: 2px solid black;
+}
+.wrapper h1{
+ 
+    margin: 25px 0;
+    text-align: center;
+    font-size: 75px;
+    font-weight: bolder;
+    color:  rgb(255,0,82);
+    margin-bottom: 10px;
+}
+
+
+    /* --------------------------------------------------------------------------------------------------------------------------------- */
+
+    
+.content-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1050px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  
+}
+.card{
+    min-height: 220px;
+    width: 320px;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:#fff;
+    margin: 10px 4px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.2);
+    transition: 0.5s;
+    margin-top: 20px;
+}
+.card i{
+    margin: 20px;
+    color: #ff5724;
+}
+.card h2{
+    margin-bottom: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+.card p{
+
+    color: #6c757d;
+    text-align: center;
+}
+.card:hover i,.card:hover p{
+    color: #fff;
+}
+.card:hover h2{
+    font-weight: 500;
+    color: #f2f2f2;
+}
+.card:nth-child(1):hover{
+    background:linear-gradient(45deg,
+                                 rgba(255,28,8,0.7) 0%,
+                                 rgba(255,0,82,0.7) 100%),
+                                 url('../img/company.webp');
+
+    background-size: cover;
+}
+.card:nth-child(2):hover{
+    background:linear-gradient(45deg,
+                                 rgba(255,28,8,0.7) 0%,
+                                 rgba(255,0,82,0.7) 100%),
+                                 url('../img/company.webp');
+
+    background-size: cover;
+}
+.card:nth-child(3):hover{
+    background:linear-gradient(45deg,
+                                 rgba(255,28,8,0.7) 0%,
+                                 rgba(255,0,82,0.7) 100%),
+                                 url('../img/company.webp');
+
+    background-size: cover;
+}
+.card:nth-child(4):hover{
+    background:linear-gradient(45deg,
+                                 rgba(255,28,8,0.7) 0%,
+                                 rgba(255,0,82,0.7) 100%),
+                                 url('../img/company.webp');
+
+    background-size: cover;
+}
+.card:nth-child(5):hover{
+    background:linear-gradient(45deg,
+                                 rgba(255,28,8,0.7) 0%,
+                                 rgba(255,0,82,0.7) 100%),
+                                 url('../img/company.webp');
+
+    background-size: cover;
+}
+.card:nth-child(6):hover{
+    background:linear-gradient(45deg,
+                                 rgba(255,28,8,0.7) 0%,
+                                 rgba(255,0,82,0.7) 100%),
+                                 url('../img/company.webp');
+
+    background-size: cover;
+}
+@media(max-width:991px)
+{
+    .wrapper{
+        padding: 25px;
+    }
+    .wrapper h1{
+        /* font-size: 2.5em; */
+        font-weight: 600;
+    }
+    .content-box{
+        min-width: 300px;
+        margin: 10px auto;
+    }
+}
+
+
+/*-------------------------------------------------------------------------------------*/
+
+.footer
+{
+ width: 100%;
+ background-color: rgb(19, 61, 85);
+ color: white;
+ text-align: center;
+ padding: 60px;
+ padding-left: 100px;
+ padding-right: 100px;
+ justify-content: center;
+ align-items: center;
+
+}
+.footer .row {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.footer .row .footer-heading h6{
+    font-size: 30px;
+    width: fit-content;
+}
+.footer .row .footer-heading{
+    position: relative;
+    width: fit-content;
+    overflow: hidden;
+    text-align: left;
+    margin-bottom: 40px;
+}
+.footer .row .line{
+
+    width: 65%;
+    border-bottom: 3px solid sandybrown;
+}
+.footer .row p{
+    text-align: left;
+}
+.footer .row p a{
+    text-decoration: none;
+    color: rgb(211, 211, 211);
+}
+.footer-heading .links{
+
+    font-size: 40px;
+
+}
+.footer-heading .links span{
+
+   font-size: 30px;
+   margin-right: 20px;
+}
+.footer-heading .links span .fa-facebook:hover{
+
+    color: rgb(59, 89, 152);
+    cursor: pointer;
+}
+.footer-heading .links span .fa-instagram:hover{
+    color: red;
+    cursor: pointer;
+}
+.footer-heading .links span .fa-twitter:hover{
+    color: rgb(0, 172, 238);
+    cursor: pointer;
+}
+.footer-heading .links span .fa-linkedin:hover{
+    color: rgb(0, 118, 168);
+    cursor: pointer;
+}
+
+
